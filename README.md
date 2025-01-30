@@ -26,22 +26,21 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ```
 product-manager/
-│-- backend/            # Código do servidor (Node.js, Express, MongoDB)
-│   ├── models/         # Modelos do banco de dados
-│   ├── routes/         # Rotas da API
-│   ├── controllers/    # Lógica de negócio
-│   ├── config/         # Configurações e conexão com o banco
-│   ├── server.js       # Arquivo principal do backend
+│-- backend/             # Código do servidor (Node.js, Express, MongoDB)
+│   ├── index.js         # Arquivo principal do backend
+│   ├── package.json     # Dependências e scripts
 │
-│-- frontend/           # Código da interface (React.js com Vite)
+│-- frontend/            # Código da interface (React.js com Vite)
 │   ├── src/
-│   │   ├── components/ # Componentes reutilizáveis
-│   │   ├── pages/      # Páginas da aplicação
-│   │   ├── App.jsx     # Componente principal
-│   │   ├── main.jsx    # Arquivo de entrada
+│   │   ├── components/  # Componentes reutilizáveis
+│   │   ├── pages/       # Páginas da aplicação
+│   │   ├── utils/       # Funções úteis para a aplicação
+│   │   ├── App.css      # Estilização do componente principal
+│   │   ├── App.jsx      # Componente principal
+│   │   ├── main.jsx     # Arquivo de entrada
+│   │   ├── package.json # Dependências e scripts
 │
 │-- README.md           # Documentação do projeto
-│-- package.json        # Dependências e scripts
 ```
 
 ## 🔧 Instalação e Execução
@@ -49,7 +48,7 @@ product-manager/
 ### 📌 Clonando o Repositório
 
 ```bash
-git clone https://github.com/AugustoAlmondes/product-manager.git
+git clone https://github.com/AugustoAlmondes/product-manager-fullstack.git
 cd product-manager
 ```
 
@@ -60,7 +59,6 @@ cd backend
 npm install
 ```
 
-- Configure um arquivo `.env` com as variáveis necessárias, como a conexão com o MongoDB.
 - Inicie o servidor:
 
 ```bash
@@ -89,15 +87,6 @@ O projeto estará rodando em `http://localhost:5173/`.
 
 ✅ Cadastro de produtos ✅ Listagem de produtos ✅ Edição de produtos ✅ Exclusão de produtos ✅ Navegação entre páginas com React Router
 
-## 📌 Contribuição
-
-Sinta-se à vontade para contribuir com melhorias ou sugestões! Basta abrir um **pull request** ou criar uma **issue**.
-
-## 📜 Licença
-
-Este projeto está sob a licença MIT.
-
 ---
 
-💡 Desenvolvido por **Augusto Almondes**
-
+💡 Desenvolvido por **Augusto Almondes**. Todos os direitos reservados.

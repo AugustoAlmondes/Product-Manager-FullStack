@@ -1,0 +1,125 @@
+.container-product {
+    color: rgb(61, 61, 61);
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        .product {
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            border-radius: 6px;
+            margin: 10px;
+            padding: 10px;
+            width: 400px;
+            /* transition: transform 0.2s ease-in-out; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: .2s;
+            justify-content: space-between;
+
+            img {
+                width: 245px;
+                height: 340px;
+                border-radius: 5px;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 15px;
+                text-align: center;
+                color:rgb(61, 61, 61);
+                margin: 10px 0;
+            }
+            
+            p {
+                margin: 10px 0;
+                font-size: 14px;
+                line-height: 15px;
+                max-height: 200px;
+                overflow-x: scroll;                
+                text-align: justify;
+                color:rgb(61, 61, 61);
+            }
+
+            span {
+                font-size: 25px;
+                line-height: 15px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                text-align: justify;
+                color:rgb(219, 186, 0);
+            }
+
+            &:hover {
+                transform: scale(1.03);
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+                cursor: pointer;
+            }
+
+            .container-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+.delete, .update{
+    margin-top: 10px;
+    width: 100px;
+    background-color: rgb(31, 31, 31);
+    
+}
+
+.delete{
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    
+    &:hover {
+        background-color: red;
+    }
+}
+
+.update{
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    
+    &:hover {
+        background-color: green;
+    }
+}
+
+.container-add-button{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-new-button {
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    &:hover {
+        /* border: 1px solid white; */
+        color: white;
+        background-color: goldenrod;
+    }
+}
